@@ -123,4 +123,13 @@ dmypy.json
 # Ignore all local history of files
 .history
 
+# Logs directory
+logs/
+
+# Virtual environment
+venv/
+
+# Dev database
+dev.db
+
 # End of https://www.gitignore.io/api/flask,visualstudiocode

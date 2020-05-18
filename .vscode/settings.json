@@ -1,0 +1,13 @@
+{
+    "python.pythonPath": "/home/caglar/Projects/flask_tutorials/microblog/venv/bin/python3",
+    "sqltools.connections": [
+        {
+            "database": "./dev.db",
+            "dialect": "SQLite",
+            "isActive": true,
+            "isConnected": true,
+            "name": "microblog-dev"
+        }
+    ],
+    "sqltools.useNodeRuntime": true
+}
