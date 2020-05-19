@@ -19,4 +19,4 @@ class Config(object):
     ADMINS = ['caglar@gmail.com']
 
     # PAGINATION
-    POSTS_PER_PAGE = 25
+    POSTS_PER_PAGE = 10
