@@ -20,3 +20,6 @@ class Config(object):
 
     # PAGINATION
     POSTS_PER_PAGE = 10
+
+    # BABEL
+    LANGUAGES = ['en', 'tr']
