@@ -23,3 +23,6 @@ class Config(object):
 
     # BABEL
     LANGUAGES = ['en', 'tr']
+
+    # 3RD PARTY KEYS
+    MS_TRANSLATOR_KEY = os.environ.get('MS_TRANSLATOR_KEY')

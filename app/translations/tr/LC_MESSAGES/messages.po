@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2020-08-07 15:00+0300\n"
+"POT-Creation-Date: 2020-08-13 22:07+0300\n"
 "PO-Revision-Date: 2020-08-07 15:00+0300\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: tr\n"
@@ -34,7 +34,7 @@ msgstr "Parola"
 msgid "Remember Me"
 msgstr "Beni Hatırla"
 
-#: app/forms.py:11 app/routes.py:47 app/templates/login.html:5
+#: app/forms.py:11 app/routes.py:52 app/templates/login.html:5
 msgid "Sign In"
 msgstr "Giriş Yap"
 
@@ -46,7 +46,7 @@ msgstr "Eposta"
 msgid "Repeat password"
 msgstr "Parola (tekrar)"
 
-#: app/forms.py:19 app/routes.py:66 app/templates/register.html:5
+#: app/forms.py:19 app/routes.py:71 app/templates/register.html:5
 msgid "Register"
 msgstr "Kayıt Ol"
 
@@ -74,73 +74,81 @@ msgstr "Bir şeyler söyle"
 msgid "Request Password Reset"
 msgstr "Parola Yenileme İste"
 
-#: app/routes.py:20
+#: app/routes.py:25
 msgid "Your post is now live!"
 msgstr "Gönderin yayında!"
 
-#: app/routes.py:30
+#: app/routes.py:35
 msgid "Home Page"
 msgstr "Ana Sayfa"
 
-#: app/routes.py:40
+#: app/routes.py:45
 msgid "Invalid username or password"
 msgstr "Geçersiz kullanıcı adı veya parola"
 
-#: app/routes.py:64
+#: app/routes.py:69
 msgid "Congratulations, you are now a registered user"
 msgstr "Tebrikler, artık kayıtlı bir kullanıcısınız"
 
-#: app/routes.py:90
+#: app/routes.py:95
 msgid "Your changes have been saved."
 msgstr "Değişiklikleriniz kaydedildi."
 
-#: app/routes.py:95 app/templates/edit_profile.html:5
+#: app/routes.py:100 app/templates/edit_profile.html:5
 msgid "Edit Profile"
 msgstr "Profilini Güncelle"
 
-#: app/routes.py:105 app/routes.py:124
+#: app/routes.py:110 app/routes.py:129
 #, python-format
 msgid "User %(username)s not found."
 msgstr "%(username)s kullanıcısıbulunamadı."
 
-#: app/routes.py:108
+#: app/routes.py:113
 msgid "You cannot follow youself!"
 msgstr "Kendini takip edemezsin"
 
-#: app/routes.py:112
+#: app/routes.py:117
 #, python-format
 msgid "You are now following %(username)s!"
 msgstr "%(username)s kullanıcısını artık takip ediyorsun!"
 
-#: app/routes.py:127
+#: app/routes.py:132
 msgid "You cannot unfollow yourself!"
 msgstr "Kendini takibi bırakamazsın"
 
-#: app/routes.py:131
+#: app/routes.py:136
 #, python-format
 msgid "You are not following %(username)s!"
 msgstr "%(username)s kullanıcısını takip etmiyorsun!"
 
-#: app/routes.py:147 app/templates/base.html:33
+#: app/routes.py:152 app/templates/base.html:49
 msgid "Explore"
 msgstr "Keşfet"
 
-#: app/routes.py:158
+#: app/routes.py:163
 msgid "Check your email for instructions to reset your password"
 msgstr "Parola yenileme işlemleri için epostanı kontrol et"
 
-#: app/routes.py:160 app/routes.py:176
+#: app/routes.py:165 app/routes.py:181
 #: app/templates/reset_password_request.html:5
 msgid "Reset Password"
 msgstr "Parola Yenile"
 
-#: app/routes.py:168
+#: app/routes.py:173
 msgid "Invalid reset link."
 msgstr "Geçersiz parola yenileme adresi."
 
-#: app/routes.py:174
+#: app/routes.py:179
 msgid "Your password has been reset."
 msgstr "Parolanız yenilendi."
+
+#: app/translate.py:8
+msgid "Error: translator service is not configured"
+msgstr "Hata: tercüme servisi ayarlı değil"
+
+#: app/translate.py:15
+msgid "Error: the translation service failed"
+msgstr "Hata: tercüme servisi başarısız oldu"
 
 #: app/templates/404.html:3
 msgid "File Not Found"
@@ -156,30 +164,40 @@ msgstr "Öngörülmeyen bir hata oluştu"
 
 #: app/templates/500.html:4
 msgid "The administrator has been notified. Sorry for inconvenience!"
-msgstr "Site yöneticisine hata ile ilgili bilgi paylaşıldı. Aksaklık için özür dileriz!"
+msgstr ""
+"Site yöneticisine hata ile ilgili bilgi paylaşıldı. Aksaklık için özür "
+"dileriz!"
 
 #: app/templates/_post.html:14
 #, python-format
 msgid "%(username)s said %(when)s"
 msgstr "%(username)s %(when)s söyledi"
 
+#: app/templates/_post.html:24
+msgid "Translate"
+msgstr "Tercüme Et"
+
 #: app/templates/base.html:7
 msgid "Welcome to Microblog"
 msgstr "Microblog'a Hoşgeldiniz"
 
-#: app/templates/base.html:32
+#: app/templates/base.html:27
+msgid "Error: Could not contact to server."
+msgstr "Hata: Sunucuya bağlanamadı"
+
+#: app/templates/base.html:48
 msgid "Home"
 msgstr "Ana Sayfa"
 
-#: app/templates/base.html:37
+#: app/templates/base.html:53
 msgid "Login"
 msgstr "Giriş Yap"
 
-#: app/templates/base.html:39
+#: app/templates/base.html:55
 msgid "Profile"
 msgstr "Profil"
 
-#: app/templates/base.html:40
+#: app/templates/base.html:56
 msgid "Logout"
 msgstr "Çıkış"
 
