@@ -132,4 +132,7 @@ venv/
 # Dev database
 dev.db
 
+# PyCharm IDE
+.idea
+
 # End of https://www.gitignore.io/api/flask,visualstudiocode
